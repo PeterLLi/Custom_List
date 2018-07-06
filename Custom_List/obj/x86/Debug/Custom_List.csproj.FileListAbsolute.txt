@@ -1,0 +1,9 @@
+/Users/peterli/Documents/Dev Code Camp/Projects/Custom_List/Custom_List/obj/x86/Debug/Custom_List.csprojResolveAssemblyReference.cache
+/Users/peterli/Documents/Dev Code Camp/Projects/Custom_List/Custom_List/obj/x86/Debug/Custom_List.csproj.CoreCompileInputs.cache
+/Users/peterli/Documents/Dev Code Camp/Projects/Custom_List/Custom_List/bin/Debug/Custom_List.exe
+/Users/peterli/Documents/Dev Code Camp/Projects/Custom_List/Custom_List/bin/Debug/Custom_List.pdb
+/Users/peterli/Documents/Dev Code Camp/Projects/Custom_List/Custom_List/bin/Debug/nunit.framework.dll
+/Users/peterli/Documents/Dev Code Camp/Projects/Custom_List/Custom_List/bin/Debug/nunit.framework.pdb
+/Users/peterli/Documents/Dev Code Camp/Projects/Custom_List/Custom_List/bin/Debug/nunit.framework.xml
+/Users/peterli/Documents/Dev Code Camp/Projects/Custom_List/Custom_List/obj/x86/Debug/Custom_List.exe
+/Users/peterli/Documents/Dev Code Camp/Projects/Custom_List/Custom_List/obj/x86/Debug/Custom_List.pdb
