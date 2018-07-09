@@ -11,18 +11,28 @@ namespace Custom_List
         MyList<int> list = new MyList<int>();
 
         [Test]
-        public void AddTestFirst()
+        public void AddToTest()
         {
-            int expected = 1;
+            
+            int expected = 6;
             list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+            list.Add(5);
+            list.Add(6);
 
-            Console.WriteLine(list[0]);
-            Assert.AreEqual(expected, list[0]);
+            int actual = list[5];
+            Assert.AreEqual(expected, actual);
+            Console.WriteLine(actual);
         }
 
         [Test]
-        public void SearchIndex(){
-            
+        public void RemoveFromTest()
+        {
+            int expected = 0;
+            int actual = list[0];
+            list.Remove(1);
         }
     }
 }

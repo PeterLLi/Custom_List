@@ -23,12 +23,12 @@ namespace Custom_List
         {
             myArray[arrayCount] = addItem;
             arrayCount++;
-            AddMore();
+            AddMore(addItem);
         }
 
-        public void AddMore()
+        public void AddMore(T addItem)
         {
-            if(arrayCount > arrayCapacity){
+            if(arrayCount >= arrayCapacity){
                 arrayCapacity += 5;
                 T[] secondArray = new T[arrayCapacity];
                 for (int i = 0; i < arrayCount; i++)
@@ -37,6 +37,11 @@ namespace Custom_List
                 }
                 myArray = secondArray;
             }
+
+        }
+
+        public void Remove(T removeItem){
+            
         }
 
         public T this[int index]{

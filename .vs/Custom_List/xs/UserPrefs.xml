@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{1BF3989C-D776-4648-BE44-276035AE7A8A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Custom_List/AddTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Custom_List/MyList.cs">
     <Files>
       <File FileName="Custom_List/Program.cs" Line="9" Column="13" />
-      <File FileName="Custom_List/MyList.cs" Line="11" Column="13" />
-      <File FileName="Custom_List/AddTest.cs" Line="8" Column="13" />
+      <File FileName="Custom_List/MyList.cs" Line="31" Column="29" />
+      <File FileName="Custom_List/AddTest.cs" Line="25" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
@@ -11,6 +11,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Custom__List PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Custom__List PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>
