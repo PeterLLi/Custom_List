@@ -37,11 +37,40 @@ namespace Custom_List
                 }
                 myArray = secondArray;
             }
-
         }
 
         public void Remove(T removeItem){
-            
+            int maxLength = myArray.Length;
+
+
+            //Set new array length
+            T[] removeArray = new T[arrayCapacity];
+
+            //Loop through new array and set it equal to the old array
+            for (int i = 0; i < maxLength; i++)
+            {
+                //Set new array as the same as the old array
+                removeArray[i] = myArray[i];
+
+                //If the selected item is found, add the next item in the old array
+                if (removeItem.Equals(myArray[i]))
+                {
+                    removeArray[i] = myArray[i + 1];
+                }
+            }
+
+            //Check for repeating numbers
+            for (int j = 0; j < maxLength - 2; j++){
+                if (removeArray[j].Equals(removeArray[j + 1]))
+                {
+                    removeArray[j + 1] = removeArray[j + 2];
+                }
+            }
+
+            //Fill the old array with the new array
+            myArray = removeArray;
+
+
         }
 
         public T this[int index]{
