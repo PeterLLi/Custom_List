@@ -10,7 +10,7 @@ namespace Custom_List
         
 
         [Test]
-        public void IntAddToTest()
+        public void IntAddTest()
         {
             //Generate a new list of integers
             MyList<int> list = new MyList<int>();
@@ -19,7 +19,7 @@ namespace Custom_List
             int expected = 6;
             Console.WriteLine("Add test");
 
-            //Add numbers to the list
+            //Populate the list
             list.Add(1);
             list.Add(2);
             list.Add(3);
@@ -35,17 +35,62 @@ namespace Custom_List
             Console.WriteLine(actual);
         }
 
-        public void StringAddToTest(){
-            
+        [Test]
+        public void StringAddTest(){
+            //Generate a list of strings
+            MyList<string> list = new MyList<string>();
+
+            //Populate the list
+            list.Add("One");
+            list.Add("Two");
+            list.Add("Three");
+            list.Add("Four");
+            list.Add("Five");
+            list.Add("Six");
+
+            for (int i = 0; i < list.arrayCapacity; i++)
+            {
+                Console.WriteLine(list[i]);
+            }
         }
 
         [Test]
-        public void RemoveFromTest()
+        public void StringRemoveTest()
+        {
+            //Generate a list of strings
+            MyList<string> list = new MyList<string>();
+
+            //Populate the list
+            list.Add("One");
+            list.Add("Two");
+            list.Add("Three");
+            list.Add("Four");
+            list.Add("Five");
+            list.Add("Six");
+
+            //Remove from list test
+            Console.WriteLine("Remove test");
+            list.Remove("One");
+
+            Console.WriteLine("");
+            Console.WriteLine("The new first number is: ");
+            Console.WriteLine(list[0]);
+
+            Console.WriteLine("");
+            Console.WriteLine("New list");
+            for (int i = 0; i < list.arrayCapacity; i++)
+            {
+                Console.WriteLine(list[i]);
+            }
+        }
+
+        [Test]
+        public void IntRemoveTest()
         {
             //Generate a new list of integers
             MyList<int> list = new MyList<int>();
 
-            //Add numbers to the list
+            //Populate the list
             list.Add(1);
             list.Add(2);
             list.Add(3);
@@ -53,17 +98,19 @@ namespace Custom_List
             list.Add(5);
             list.Add(6);
 
-            //Remove test
+            //Remove from list test
             Console.WriteLine("Remove test");
             int actual = list[0];
             list.Remove(1);
 
             Console.WriteLine("");
-            Console.WriteLine("The new number is: ");
+            Console.WriteLine("The new first number is: ");
             Console.WriteLine(list[0]);
 
-
-            for (int i = 0; i < list.arrayCapacity; i++){
+            Console.WriteLine("");
+            Console.WriteLine("New list");
+            for (int i = 0; i < list.arrayCapacity; i++)
+            {
                 Console.WriteLine(list[i]);
             }
         }

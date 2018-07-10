@@ -2,9 +2,18 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Custom_List/MyList.cs">
     <Files>
       <File FileName="Custom_List/Program.cs" Line="9" Column="13" />
-      <File FileName="Custom_List/MyList.cs" Line="31" Column="29" />
-      <File FileName="Custom_List/AddTest.cs" Line="25" Column="10" />
+      <File FileName="Custom_List/MyList.cs" Line="65" Column="63" />
+      <File FileName="Custom_List/AddTest.cs" Line="95" Column="25" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Custom_List" expanded="True">
+            <Node name="Custom_List" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
