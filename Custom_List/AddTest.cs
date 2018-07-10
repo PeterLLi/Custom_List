@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using NUnit.Framework;
 
 //Add one item
@@ -7,7 +8,6 @@ namespace Custom_List
     [TestFixture]
     public class AddTest
     {
-        
 
         [Test]
         public void IntAddTest()
@@ -36,7 +36,8 @@ namespace Custom_List
         }
 
         [Test]
-        public void StringAddTest(){
+        public void StringAddTest()
+        {
             //Generate a list of strings
             MyList<string> list = new MyList<string>();
 
@@ -112,6 +113,29 @@ namespace Custom_List
             for (int i = 0; i < list.arrayCapacity; i++)
             {
                 Console.WriteLine(list[i]);
+            }
+        }
+    }
+
+    [TestFixture]
+    public class Iterator : IEnumerable
+    {
+        MyList<string> weekDayList;
+
+        [Test]
+        public IEnumerator GetEnumerator()
+        {
+            weekDayList = new MyList<string>();
+            weekDayList.Add("Sunday");
+            weekDayList.Add("Monday");
+            weekDayList.Add("Tuesday");
+            weekDayList.Add("Wednesday");
+            weekDayList.Add("Thursday");
+            weekDayList.Add("Friday");
+            weekDayList.Add("Saturday");
+
+            for (int i = 0; i < weekDayList.arrayCount; i++){
+                yield return weekDayList[i];
             }
         }
     }
