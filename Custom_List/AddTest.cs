@@ -38,6 +38,7 @@ namespace Custom_List
         [Test]
         public void StringAddTest()
         {
+            
             //Generate a list of strings
             MyList<string> list = new MyList<string>();
 
@@ -53,6 +54,10 @@ namespace Custom_List
             {
                 Console.WriteLine(list[i]);
             }
+
+            string expected = "One";
+            string actual = list[0];
+            Assert.AreEqual(expected, actual);
         }
 
         [Test]
@@ -118,24 +123,18 @@ namespace Custom_List
     }
 
     [TestFixture]
-    public class Iterator : IEnumerable
+    public class Iterator
     {
         MyList<string> weekDayList;
 
         [Test]
-        public IEnumerator GetEnumerator()
+        public void Loop()
         {
-            weekDayList = new MyList<string>();
-            weekDayList.Add("Sunday");
-            weekDayList.Add("Monday");
-            weekDayList.Add("Tuesday");
-            weekDayList.Add("Wednesday");
-            weekDayList.Add("Thursday");
-            weekDayList.Add("Friday");
-            weekDayList.Add("Saturday");
+            weekDayList = new MyList<string>() { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
 
-            for (int i = 0; i < weekDayList.arrayCount; i++){
-                yield return weekDayList[i];
+            foreach (string element in weekDayList)
+            {
+                Console.WriteLine(element);
             }
         }
     }
